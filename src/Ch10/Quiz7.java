@@ -43,7 +43,6 @@ class MonthSchedule
     MonthSchedule(int date)
     {
         day = new Day[date];
-        //Arrays.fill(day,new Day());
         for (int i = 0; i < day.length; i++)
         {
             day[i] = new Day();
