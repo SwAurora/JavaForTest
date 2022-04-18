@@ -38,6 +38,67 @@ class C05Simple
 	}
 }
 
+class subclass
+{
+	Scanner input = new Scanner(System.in);
+
+	int sub1(int x, int y)
+	{
+		if(x>y)
+		{
+			return x-y;
+		}
+		else
+		{
+			return y-x;
+		}
+	}
+	
+	void sub2()
+	{
+		System.out.print("두 수 입력: ");
+		int x = input.nextInt();
+		int y = input.nextInt();
+		
+		if(x>y)
+		{
+			System.out.println(x-y);
+		}
+		else
+		{
+			System.out.println(y-x);
+		}
+	}
+	
+	void sub3(int x, int y)
+	{
+		if(x>y)
+		{
+			System.out.println(x-y);
+		}
+		else
+		{
+			System.out.println(y-x);
+		}
+	}
+	
+	int sub4()
+	{
+		System.out.print("두 수 입력: ");
+		int x = input.nextInt();
+		int y = input.nextInt();
+		
+		if(x>y)
+		{
+			return x-y;
+		}
+		else
+		{
+			return y-x;
+		}
+	}
+}
+
 public class C05SimpleMethod
 {
 	public static void main(String[] args)
