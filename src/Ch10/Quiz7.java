@@ -11,14 +11,9 @@ class Day
         this.work = work;
     }
 
-    public String get()
-    {
-        return work;
-    }
-
     public void show()
     {
-        if (work == null)
+        if(work == null)
         {
             System.out.println("없습니다.");
         }
@@ -34,16 +29,12 @@ class MonthSchedule
 {
     Scanner input = new Scanner(System.in);
 
-    int num1;
-    int num2;
-    int num3;
-    String str1;
     Day[] day;
 
     MonthSchedule(int date)
     {
         day = new Day[date];
-        for (int i = 0; i < day.length; i++)
+        for(int i = 0; i < day.length; i++)
         {
             day[i] = new Day();
         }
@@ -79,11 +70,11 @@ class MonthSchedule
     void run()
     {
         System.out.println("이번달 스케쥴 관리 프로그램.");
-        while (true)
+        while(true)
         {
             System.out.print("할일(입력:1, 보기:2, 끝내기:3 >> ");
             int num1 = input.nextInt();
-            switch (num1)
+            switch(num1)
             {
                 case 1:
                     this.input();
