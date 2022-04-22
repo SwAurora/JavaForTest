@@ -1,0 +1,34 @@
+-------------------------
+Employee
+-------------------------
++name : String		//이름
++addr : String		//주소
+-phone: String 		//연락처
+//private 속성은 Getter and Setter 함수구현합니다
+ShowBasicInfo :void	//이름,연락처만 출력
+-------------------------
+Reguler extends Employee
+-------------------------
+-salary : int 		//연봉
+-title 	: String 	//직책
++depart	: String	//부서
+//private 속성은 Getter and Setter 함수구현합니다
+ShowRegInfo():void	//이름,주소,연락처,연봉,직책,부서 출력
+-------------------------
+Temporary extends Employee
+-------------------------
+-perPayment : int	//시급
+-wokingHour : int 	//근로시간
+-WokingDay  : int	//근무일수
+//private 속성은 Getter and Setter 함수구현합니다
+ShowTempInfo():void	//이름,주소,연락처,근로시간,근무일수 출력
+-------------------------
+Main
+-------------------------
+Reguler emp1 = new Reguler("홍길동","달서구","010-111-2222",3000,"사원","인사부");
+//이름,주소,연락처,연봉,직책,부서 를 초기화 할 수 있는 생성자 구현 (super 예약어로 상위클래스 생성자호출할 것!)
+Temporary emp2 = new Temporary("이하늘","중구","010-333-4444",20000,100,20);
+//이름,주소,연락처,시급,근로시간,근로일수를 초기화 할 수 있는 생성자 구현(super 예약어로 상위클래스 생성자호출할 것!)
+
+
+	

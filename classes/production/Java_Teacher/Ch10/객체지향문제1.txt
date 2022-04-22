@@ -1,0 +1,64 @@
+----------------------------
+1.
+----------------------------
+자바 클래스를 작성하는 연습을 해보자. 
+1) 
+public static void main(String[] args) {
+   Person Jung = new Person("홍길동", 44, "대구"); //이름(name),나이(age),주소(addr)
+   Jung.showinfo();
+}
+[출력]
+이름 : 홍길동
+나이 : 44
+주소 : 대구
+
+----------------------------
+2.
+----------------------------
+--Position.java--
+class Position{
+
+}
+--Main2.java--
+public static void main(String[] args) {
+   Position pos1 = new Position(10); //x좌표(int x)
+   Position pos2 = new Position(30,40); //x좌표(int x),y좌표(int y)
+   pos1.showpos();
+   pos2.showpos();
+}
+[출력]
+X : 10 , Y : 0
+X : 30 , Y : 40
+
+
+----------------------------
+3.
+----------------------------
+--Employee--
+{
+
+}
+
+--Main4.java--
+public static void main(String[] args) {
+   Employee emp1 = new Employee("홍길동","인사부","사원","3000");//nave,dept,role,salary
+   emp1.showInfo();
+   System.out.println();
+   emp1.setRole("대리");
+   emp1.setDept("총무부");
+   emp1.setSalary(4000);
+   emp1.showInfo();
+}
+[출력]
+이름 : 홍길동
+부서 : 인사부
+직책 : 사원
+급여 : 3000
+
+이름 : 홍길동
+부서 : 총무부
+직책 : 대리
+급여 : 4000
+
+
+
