@@ -32,9 +32,9 @@ public class test2
             if(s.contains(str))
             {
                 check = true;
+                break;
             }
         }
-
         return check;
     }
 }

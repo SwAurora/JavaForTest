@@ -40,16 +40,5 @@ public class test3
         {
             e.printStackTrace();
         }
-        finally
-        {
-            try
-            {
-                conn.close();
-            }
-            catch(Exception e1)
-            {
-                e1.printStackTrace();
-            }
-        }
     }
 }

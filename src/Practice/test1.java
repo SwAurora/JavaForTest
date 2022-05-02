@@ -38,9 +38,9 @@ class Cal
     public void ShowVal()
     {
         System.out.println("-------조회-------");
-        for(int i = 0; i <= arr.indexOf(10); i++)
+        for(int i : arr)
         {
-            System.out.println(arr.get(i));
+            System.out.println(i);
         }
     }
 }
